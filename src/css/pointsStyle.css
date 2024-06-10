@@ -131,6 +131,11 @@ header {
     margin-top: 0;
 }
 
+.points-summary span {
+    color: gray;
+    font-size: 0.9em;
+}
+
 .points-value {
     font-size: 36px;
     font-weight: bold;
@@ -186,25 +191,35 @@ header {
     cursor: pointer;
 }
 
+.submission-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
 .submit {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
-    background-color: #e0e7ff;
-    padding: 10px;
+    background-color: white;
+    padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Make the container relative */
+    margin-top: 20px;
 }
 
 .submit-icon {
-    font-size: 24px;
-    background-color: #6b21a8;
-    color: white;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
+    position: absolute; /* Position the icon absolutely within the container */
+    top: -55px; /* Adjust this value to control how much the icon overlaps */
+    left: 50%; /* Center the icon horizontally */
+    transform: translateX(-50%); /* Center the icon */
+}
+
+.submit-icon img {
+    width: 90px; /* Adjust the size as needed */
+    height: 90px; /* Adjust the size as needed */
 }
 
 .submit-button {
@@ -214,4 +229,18 @@ header {
     padding: 10px 20px;
     border-radius: 20px;
     cursor: pointer;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: #1d4fb7;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lomba {
+    width: 400px; /* Adjust as needed */
 }
