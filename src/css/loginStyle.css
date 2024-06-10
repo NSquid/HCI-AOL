@@ -1,5 +1,5 @@
 body {
-    background-image: url('leftBG.png');
+    background-image: url('../../media/leftBG.png');
     background-size: cover;
     background-position: right center;
     height: 100vh;
@@ -34,7 +34,7 @@ body {
 } */
 
 .right {
-    background-image: url('rightBG.png');
+    background-image: url('../../media/rightBG.png');
     display: flex;
     justify-content: center;
     align-items: center;

@@ -23,14 +23,14 @@ body {
     padding-top: 20px;
 }
 
-.logo {
+.title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
 }
 
-.logo span {
+.studyText {
     color: #fff;
     background-color: #1d4fb7;
     padding: 0 5px;
@@ -81,8 +81,9 @@ main {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    padding: 10px 0;
 }
 
 .search-profile {
@@ -110,59 +111,50 @@ header {
     margin-top: 20px;
 }
 
-.schedule, .calendar, .courses, .homework {
+.new-scores, .grades-stats, .scores, .gpa {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.schedule {
     flex: 1 1 300px;
 }
 
-.calendar {
-    flex: 1 1 200px;
+.new-scores h2, .scores h2, .gpa h2 {
+    margin-top: 0;
 }
 
-.calendar-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 10px;
-    text-align: center;
+.new-scores ul {
+    list-style: none;
+    padding: 0;
 }
 
-.courses {
-    flex: 1 1 300px;
+.new-scores li {
+    margin-bottom: 10px;
 }
 
-.homework {
-    flex: 1 1 100%;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.homework img {
-    width: 150px;
+.grades-stats img, .gpa img {
+    width: 100%;
     height: auto;
 }
 
-.homework div {
-    flex: 1;
+.scores ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.homework button {
-    background-color: #2575fc;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
+.scores li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 18px;
 }
 
-.homework button:hover {
-    background-color: #1d4fb7;
+.gpa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .studyText{
@@ -175,58 +167,16 @@ header {
     background-color: transparent;
 }
 
-.courses {
-    flex: 1 1 300px;
-    max-height: 200px;
-    overflow-y: auto;
-}
-
-.courses ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.courses ul li {
-    margin: 5px 0;
-}
-
-.courses ul li a {
-    text-decoration: none;
-    color: #2575fc;
+.scores .grade {
+    background-color: #2575fc;
+    color: white;
     padding: 10px;
-    display: block;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.courses ul li a:hover {
-    background-color: #f0f0f0;
-}
-
-.courses h2 img {
     margin-right: 10px;
-    vertical-align: middle
+    min-width: 20px;
+    text-align: center;
 }
 
-.mycourse{
-    height: 10%;
-    width: 10%;
-}
-
-.containImage ul li{    
-    align-items: center;
-}
-
-.containImage ul li a{
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-
-.containImage ul li img{
-    display: block;
-    padding: 0;
-    margin: 0;
+.scores .subject {
+    flex: 1;
 }
