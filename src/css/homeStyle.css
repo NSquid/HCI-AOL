@@ -290,9 +290,10 @@ header {
 .mycourse{
     height: 10%;
     width: 10%;
+    margin-right: 10px;
 }
 
-.containImage ul li{    
+.containImage ul li{
     align-items: center;
 }
 
@@ -307,4 +308,5 @@ header {
     display: block;
     padding: 0;
     margin: 0;
+    margin-right: 10px; /* Add this line to give space between the image and text */
 }
