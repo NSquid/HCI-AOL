@@ -42,8 +42,8 @@ body {
     clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
     z-index: 2;
     position: relative;
-    background-position: 50% center; /* Adjust this value to move the image more to the left */
-    background-size: 150%; /* Adjust this value to zoom out the image */
+    background-position: 50% center; 
+    background-size: 150%; 
 }
 
 .login-container {

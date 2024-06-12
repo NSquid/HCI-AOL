@@ -206,20 +206,20 @@ header {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative; /* Make the container relative */
+    position: relative; 
     margin-top: 20px;
 }
 
 .submit-icon {
-    position: absolute; /* Position the icon absolutely within the container */
-    top: -55px; /* Adjust this value to control how much the icon overlaps */
-    left: 50%; /* Center the icon horizontally */
-    transform: translateX(-50%); /* Center the icon */
+    position: absolute;
+    top: -55px; 
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .submit-icon img {
-    width: 90px; /* Adjust the size as needed */
-    height: 90px; /* Adjust the size as needed */
+    width: 90px; 
+    height: 90px; 
 }
 
 .submit-button {
@@ -242,5 +242,5 @@ header {
 }
 
 .lomba {
-    width: 400px; /* Adjust as needed */
+    width: 400px;
 }
